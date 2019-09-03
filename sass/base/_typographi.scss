@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body{
+    padding: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    font-family: 'Lato', sans-serif;
+    color: $color-gray-dark;
+}
+.heading-primary{
+    margin-bottom: 6rem;
+    backface-visibility: hidden;
+    text-transform: uppercase;
+    color: $color-white;
+    &-main{
+        font-size: 3.7rem;
+        letter-spacing: 1.5rem;
+        display: block;
+        font-weight: 400;
+        animation: movetoright 1s ease-out;
+        transition: all 650ms; 
+    }
+    &-sub{
+        font-size: 1.6rem;
+        font-weight: 400;
+        display: block;
+        letter-spacing: .8rem;
+        animation: movetoleft 1s ease-out;
+
+        strong{
+            color: $color-gold;
+            font-weight: 900;
+            cursor: pointer;
+        }
+    }
+}
+.heading-secondary{
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    display: inline-block;
+    font-weight: 700;
+    background: linear-gradient(to right,$color-dark-purple,$color-light-dark-purple);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .2s;
+
+    &:hover{
+        transform: skewX(15deg) skewY(2deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black,.2);
+    }
+}
+
+.heading-teritoury{
+    font-size: $defoult-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.paragraph{
+    font-size: $defoult-font-size;
+    &:not(:last-child){
+        margin-bottom: 1.5rem;
+    }
+}
